@@ -16,8 +16,8 @@ public class SetCookiesServlet extends HttpServlet {
             throws ServletException, IOException {
         Cookie cookie1 = new Cookie("jsessionId", "777777777");
         Cookie cookie2 = new Cookie("jsessionName", "Viktor");
-        cookie1.setMaxAge(60 * 60 * 24);
-        cookie2.setMaxAge(60 * 60 * 24);
+        cookie1.setMaxAge(24 * 60 * 60);
+        cookie2.setMaxAge(24 * 60 * 60);
 
         resp.addCookie(cookie1);
         resp.addCookie(cookie2);
