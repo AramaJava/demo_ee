@@ -21,11 +21,10 @@ public class GetMyCookiesServlet extends HttpServlet {
         } else {
             pw.println();
             pw.println("<h1> You not have cookies, click link to set cookies </h1>");
-            pw.println("<a href=" + "set-cookies" + ">http://localhost:8080/set-cookies</a>");
+             pw.println("<a href=\"set-cookies\">http://localhost:8080/set-cookies</a>");
         }
         pw.println("</html>");
     }
-
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
