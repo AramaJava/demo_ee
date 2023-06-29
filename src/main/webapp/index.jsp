@@ -9,5 +9,16 @@
 <h5>In the evenings I walk with a dog named Bally</h5>
 <br/>
 <a href="hello-servlet">Link</a>
+<p>
+    <%= "String from JSP "%>
+    <br/>
+    <%@ page import="java.util.Date, ru.maxima.TestClass" %>
+    <% TestClass testClass = new TestClass();%>
+    <%= new Date()%>
+    <%= "<br/>" + testClass.getInfo()%>
+
+
+
+</p>
 </body>
 </html>
