@@ -4,4 +4,28 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>SetCookiesServlet1</servlet-name>
+        <servlet-class>ru.maxima.homework.SetMyCookiesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCookiesServlet1</servlet-name>
+        <servlet-class>ru.maxima.homework.GetMyCookiesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteCookiesServlet1</servlet-name>
+        <servlet-class>ru.maxima.homework.DeleteMyCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet1</servlet-name>
+        <url-pattern>/set-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet1</servlet-name>
+        <url-pattern>/get-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet1</servlet-name>
+        <url-pattern>/delete-cookies</url-pattern>
+    </servlet-mapping>
 </web-app>
